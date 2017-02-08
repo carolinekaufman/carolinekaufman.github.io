@@ -1,0 +1,210 @@
+body {
+  background: #e0e8ec;
+}
+
+h2 {
+  display: block;
+  padding: 15px;
+  background: #a9c3d0;
+  color: rgba(0, 0, 0, .53);
+  font-weight: 400;
+  font-size: 30px;
+  text-shadow: 1px 0px 1px rgba(0,0,0, .1);
+  text-align: left;
+  letter-spacing: .03rem;
+  margin: 0;
+}
+
+h3 {
+  text-align: left;
+  font-size:20px;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+.icon, h1 {
+  animation: none;
+}
+
+.box {
+  border-radius: 5px;
+  overflow:hidden;
+  box-shadow: 0px 3px 3px rgba(0,0,0,.2);
+  background: #ffffff;
+  text-align: left;
+}
+
+.content {
+  padding: 17px;
+}
+
+#education {
+  display: block;
+}
+
+#skills {
+  margin-top: 50px;
+}
+
+#experience {
+  display: block;
+  margin-top: 0px;
+  margin-left: 50px;
+}
+
+table {
+  width: 100%;
+}
+
+
+#right {
+  width: 65%;
+  margin: 0;
+}
+
+#left {
+  width: 35%;
+  margin: 0;
+}
+
+td {
+  vertical-align: top;
+}
+.date {
+  text-align: left;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  margin-top: -5px;
+}
+
+.details {
+  font-size: 13px;
+  font-weight: lighter;
+  letter-spacing: .03rem;
+}
+
+hr {
+  display: block;
+   height: 1px;
+   border: 0;
+   border-top: 1px solid #ccc;
+   margin: 20px 0;
+   padding: 0;
+}
+
+.type {
+  display: block;
+  margin: 5px 0 0 0 ;
+}
+
+ul {
+  list-style-type:none;
+  font-weight:300;
+  font-size: .9em;
+  letter-spacing: .02rem;
+}
+
+li {
+  position: relative;
+}
+
+.learn::before {
+  content:"";
+  position: absolute;
+  background: #b8d9ea;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-left: -15px;
+  margin-top: 7px;
+}
+
+.skilled::before {
+  content:"";
+  position: absolute;
+  background: #5f93ae;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-left: -15px;
+  margin-top: 7px;
+}
+
+.new::before {
+  content:"";
+  position: absolute;
+  background: #ffffff;
+  width: 6px;
+  height: 6px;
+  border: 1px solid #a9c3d0;
+  border-radius: 50%;
+  margin-left: -15px;
+  margin-top: 7px;
+}
+
+.sub {
+  padding-left: 15px;
+}
+
+#footer {
+  background: #ffffff;
+  padding: 10px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  margin-top: 80px;
+  position: relative;
+}
+
+#footer ul {
+  width: 40%;
+  margin: 50px;
+}
+
+#footer ul h3 {
+  margin-left: -20px;
+}
+
+#footer li {
+  margin: 10px 0;
+}
+
+#experience li {
+  position: relative;
+  margin-top:10px;
+}
+#experience li::before {
+    left:0;
+    top:0;
+    position:absolute;
+    content:"";
+    display:block;
+    background:#a9c3d0;
+    margin-top: 7px;
+    margin-left: -15px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+#header {
+  position:relative;
+  background:#ffffff;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding-bottom: 50px;
+}
+
+.handle {
+  text-align: center;
+  color: rgba(0,0,0,.7);
+  margin: 0 auto;
+  display:block;
+  font-weight: 300;
+  font-size: 1.2em;
+  letter-spacing: .05rem;
+}
