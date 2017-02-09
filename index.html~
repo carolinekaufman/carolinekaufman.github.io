@@ -30,7 +30,7 @@ A link to your short biography
 	<div id="icon"><img src="cartoon.png" alt="cartoon Caroline"/></div>
 	<h1>Caroline Kaufman</h1>
 	<div id="links">
-		<a href="http://www.carolinekaufman.github.io/resume.html">resumé</a>
+		<a href="resume.html">resumé</a>
 		<a href="http://www.carolinekaufman.github.io/bio.html">about me</a>
 		<a href="http://www.ciralism.tumblr.com">blog</a>
 	</div>
