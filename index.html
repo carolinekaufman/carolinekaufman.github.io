@@ -1,0 +1,142 @@
+<!doctype HTML>
+<html>
+<head>
+	<title>Hi, I'm Caroline.</title>
+	<link rel="stylesheet" type="text/css" href="caroline.css">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,600,700,900" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="block"></div>
+	<header>
+		<div id="links">
+			<a href="/projects.html">Projects</a>
+			<a href="/resume.pdf">Resume</a>
+			<a href="/connect">Contact</a>
+		</div>
+	</header>
+	<div id="menu">
+		<a href="/projects.html"><span class="num">01</span>Projects</a>
+		<a href="/resume"><span class="num">02</span>Resume</a>
+		<a href="/connect"><span class="num">03</span>Contact</a>
+	</div>
+	<div id="body">
+		<h4>Hi there, I'm</h4>
+		<h1>Caroline Kaufman</h1>
+		<div class="short_bio">
+			<p>I'm a Computer Science student at Tufts University, and I'm <b>passionate about technology, education, human-computer interaction, and all things French.</b> I'm interested in interactions between technology and the people who use it, from natural language processing to UX/UI design, and especially in how we can leverage technology to make information and experiences accessible to everyone. I'm particularly excited by opportunities to use technology to make education accessible and delightful for all learners. I consider myself a people-person turned tech geek, and I love finding ways to combine my passions.</p>
+			<p>These days, I'm taking courses in Machine Structures and Assembly Language Programming, Discrete Math, Contemporary Challenges in French Culture, and Linguistics of Second Language Acquisition. I'm also working as a teaching assistant for the Intro to CS course at Tufts, leading a team of fantastic health educators for the Peer Health Exchange, and facilitating weekend coding workshops to give local students exposure to CS with <a href="http://www.eecs.tufts.edu/~laney/tuftsgoc">Tufts Girls of Code</a>. If I'm not up to my ears in assembly code or pseudocoding on whiteboards with my COMP11 students, you can probably find me teaching workshops on communication and consent in high schools around Boston, poring over design articles on Medium, or curled up in the library with a French novel.</p>
+		</div>
+		<div class="gap"></div>
+		<h2>At a glance...</h2>
+		<div class="glance">
+			<div class="table">
+				<div class="row">
+					<div>
+						<h5>Education</h5>
+						<h3>Tufts University</h3>
+					</div>
+					<div class="m">
+						<h5>Year</h5>
+						<h3>2019/2020*</h3>
+					</div>
+					<div class="r">
+						<h5>GPA</h5>
+						<h3>3.38</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div>
+					<h5>Coursework</h5>
+					<h3>Technical Courses</h3>
+						<ul class="left-aligned">
+							<li>SPRING 2018: Algorithms</li>
+							<li>SPRING 2018: Human-Computer Interaction</li>
+							<li>Machine Structures and Assembly Language Programming</li>
+							<li>Discrete Mathematics</li>
+							<li>Data Structures and Algorithms</li>
+							<li>Web Programming</li>
+							<li>Intro to Computer Science</li>
+						</ul>
+					</div>
+					<div class="m"></div>
+					<div class="r">
+						<h5>Extracurriculars</h5>
+						<h3>Organizations</h3>
+						<ul>
+							<li>Tufts CS Department (TA)</li>
+							<li>Girls Who Code (TA)</li>
+							<li>Peer Health Exchange</li>
+							<li>Tufts Women in Computer Science</li>
+							<li>Tufts Girls of Code</li>
+							<li>JumboCode</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div>
+						<h5>Skills</h5>
+						<h3>Programming Languages</h3>
+						<ul class="left-aligned">
+							<li>C</li>
+							<li>C++</li>
+							<li>JavaScript</li>
+							<li>HTML/CSS</li>
+						</ul>
+					</div>
+					<div class="m">
+						<h5>Skills</h5>
+						<h3>Software/OS</h3>
+						<ul class="left-aligned">
+							<li>Git</li>
+							<li>Valgrind</li>
+							<li>GDB</li>
+							<li>Linux/UNIX</li>
+						</ul>
+					</div>
+					<div class="r">
+						<h5>Skills</h5>
+						<h3>Frameworks</h3>
+						<ul>
+							<li>Bootstrap</li>
+							<li>jQuery</li>
+							<li>Django</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+				<div>
+					<h3>Objective</h3>
+					I am seeking an internship in software engineering for the summer of 2018. I hope to be part of a team of engineers and use and improve upon my programming, testing, and design skills in a real-world setting.
+				</div>
+				<div></div>
+				<div class="r">
+					<h3>Profile</h3>
+					I'm a full-time CS undergraduate student with experience tackling large-scale programming challenges, as well as ample experience teaching others and fostering supportive team environments.
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="footnotes">
+			<p>* By enrollment year, I am a member of the Tufts University Class of 2020. However, I am on track to graduate in December of 2019, and will complete 7 of 10 requirements for the B.S. in Computer Science before the summer of 2018.</p>
+		</div>
+	</div>
+</body>
+	<script type="text/javascript">
+		$(window).on("load",function() {
+	   		var menu = document.getElementById('menu');
+   			var jump = menu.getBoundingClientRect().top;
+			console.log(jump);
+  			$(window).scroll(function() {
+  				if($(window).scrollTop() > jump) {
+  					$('#menu').css('opacity', '1');
+   					$('#menu').css('right', '1em');  					
+ 				}
+  				else {
+  					$('#menu').css('opacity', '0');  					
+  					$('#menu').css('right', '-50%');  					
+  				}
+  			});
+  		});
+	</script>
+</html>
