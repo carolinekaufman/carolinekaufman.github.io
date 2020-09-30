@@ -3,135 +3,28 @@
 <head>
 	<title>Hi, I'm Caroline.</title>
 	<link rel="stylesheet" type="text/css" href="caroline.css">
-	<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,600,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 	<div id="block"></div>
-	<header>
-		<div id="links">
-			<a href="/projects.html">Projects</a>
-			<a href="/contact.html">Contact</a>
-		</div>
-	</header>
-	<div id="menu">
-		<a href="/projects.html"><span class="num">01</span>Projects</a>
-		<a href="/contact.html"><span class="num">02</span>Contact</a>
-	</div>
 	<div id="body">
 		<h4>Hi there, I'm</h4>
 		<h1>Caroline Kaufman</h1>
 		<div class="short_bio">
-			<p>I’m a senior studying Computer Science and French at Tufts University. 
-			I’m interested in distributed systems, and I’m especially excited about using technology to
-			improve education. I love working collaboratively and bringing teams together,
-			whether it’s pair programming or building community in the courses I TA.</p>
-		<p>I'm wrapping up my internship with the iOS Safari team at Apple this summer, and this fall, I'll be working as a teaching fellow for 
-			our Data Structures course (COMP15) and a teaching assistant for Internet-Scale Distributed Systems (COMP117), and taking
-			courses in computation theory and operating systems.</p>
-		</div>
-		<div class="gap"></div>
-		<h2>At a glance...</h2>
-		<div class="glance">
-			<div class="table">
-				<div class="row">
-					<div>
-						<h5>Education</h5>
-						<h3>Tufts University</h3>
-					</div>
-					<div class="m">
-						<h5>Year</h5>
-						<h3>2020</h3>
-					</div>
-                                        <div class="r">
-                                                <h5>Major</h5>
-                                                <h3>Computer Science</h3>
-                                        </div>
-				</div>
-				<div class="row">
-					<div>
-					<h5>Coursework</h5>
-					<h3>Technical Courses</h3>
-						<ul class="left-aligned">
-							<li>Operating Systems</li>
-							<li>Computation Theory</li>
-							<li>Programming Languages</li>
-							<li>Data Visualization</li>
-							<li>Internet-Scale Distributed Systems</li>
-							<li>Algorithms</li>
-							<li>Machine Structures and Assembly Language Programming</li>
-							<li>Discrete Mathematics</li>
-							<li>Data Structures</li>
-							<li>Web Programming</li>
-						</ul>
-					</div>
-					<div class="m"></div>
-					<div class="r">
-						<h5>Extracurriculars</h5>
-						<h3>Organizations</h3>
-						<ul>
-							<li>Tufts CS Department (TF, TA)</li>
-							<li>JumboCode</li>
-							<li>Girls Who Code (TA)</li>
-							<li>Peer Health Exchange</li>
-							<li>Tufts Women in Computer Science</li>
-							<li>Tufts Girls of Code</li>
-						</ul>
-					</div>
-				</div>
-				<div class="row">
-					<div>
-						<h5>Skills</h5>
-						<h3>Programming Languages</h3>
-						<ul class="left-aligned">
-							<li>C/C++</li>
-							<li>Objective-C</li>
-							<li>Python</li>
-							<li>Ruby</li>
-							<li>HTML/CSS/JavaScript</li>
-						</ul>
-					</div>
-					<div class="m">
-						<h5>Skills</h5>
-						<h3>Software/OS</h3>
-						<ul class="left-aligned">
-							<li>Git</li>
-							<li>Valgrind</li>
-							<li>GDB</li>
-							<li>Linux/UNIX</li>
-						</ul>
-					</div>
-					<div class="r">
-						<h5>Skills</h5>
-						<h3>Frameworks</h3>
-						<ul>
-							<li>Bootstrap</li>
-							<li>Rails</li>
-							<li>Django</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="footnotes">
+			<p>I'm a software engineer at Datadog, where I work on the Revenue Engineering team.
+			I recently graduated from Tufts University with a B.S. in Computer Science and a second major in French.
+			I'm really passionate about privacy, ethics in computing, and Computer Science education. I worked as a Teaching Fellow throughout
+			my undergrad career, and I especially loved working with new coders in our Intro to CS and Data Structures courses.
+			I really enjoy teaching and mentoring, and whether we've met or not,
+		  if I can ever be helpful to you, I would love to chat! You can email me at carolinekaufman97 [at] gmail [dot] com.</p>
+			<p>In my free time, I love to read, travel, paint, practice my French by watching standup specials and listening to podcasts, and hang out with my dogs,
+			Ruby and Norm. I volunteer as a college coach with <a href="https://scholarmatch.org/">ScholarMatch</a> and as a WAVE Advisor for <a href="https://www.builtbygirls.com/">BUILT BY GIRLS</a>,
+		  and I serve on the External Advisory Board of the Tufts Department of Computer Science. My job will eventually bring me to New York, but
+		  for the time being, you'll find me working remotely around New England and enjoying any opportunity to get outside, whether it's an early morning lake swim
+		  or a sunset hike after work.</p>
 		</div>
 	</div>
 </body>
-	<script type="text/javascript">
-		$(window).on("load",function() {
-	   		var menu = document.getElementById('menu');
-   			var jump = menu.getBoundingClientRect().top;
-			console.log(jump);
-  			$(window).scroll(function() {
-  				if($(window).scrollTop() > jump) {
-  					$('#menu').css('opacity', '1');
-   					$('#menu').css('right', '1em');  					
- 				}
-  				else {
-  					$('#menu').css('opacity', '0');  					
-  					$('#menu').css('right', '-50%');  					
-  				}
-  			});
-  		});
-	</script>
 </html>
